@@ -1,0 +1,235 @@
+@font-face {
+  font-family: 'Diamonds';
+  src: url('../fonts/Diamonds-Regular.otf');
+  src: url('../fonts/Diamonds-Regular.ttf') format('truetype'); /* One of these will work... xd... */
+}
+
+@font-face {
+    font-family: 'XOXOGlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/XOXOGlowRegular.otf');
+    src: url('../fonts/XOXOGlowRegular.ttf') format('truetype');
+    -webkit-font-smoothing: aliased;
+    font-smooth: never;
+}
+
+@font-face {
+	font-family: 'Zipper';
+	font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Zipper-Regular.otf');
+    src: url('../fonts/Zipper-Regular.ttf') format('truetype');
+    -webkit-font-smoothing: aliased;
+    font-smooth: never;
+}
+
+* {
+	user-select: none;
+	font-family: 'Diamonds';
+}
+
+body {
+	background: #000;
+	overflow: none;
+	
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+video {
+	background-size: cover;
+	left: 50%;
+	top: 50%;
+	position: fixed;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -99;
+	transform: translateX(-50%) translateY(-50%);
+	filter: blur(20px);
+}
+
+#container {
+	width: 700px;
+	height: 425px;
+	border: 4px solid darkred;
+	box-shadow: 0px 0px 50px darkred;
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+#center {
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.title {
+	color: #FFF;
+	font-size: 82px;
+	font-family: 'XOXOGlow', sans-serif;
+	text-align: center;
+}
+
+.social {
+	color: #FFF;
+	font-size: 40px;
+	font-family: 'Diamonds';
+	text-align: center;
+}
+
+.social a {
+	text-decoration: none;
+	color: #FFF;
+	transition: all 1s ease-in-out;
+}
+
+.social a:hover {
+	text-decoration: none;
+	color: darkred;
+	transition: all 1s ease-in-out;
+}
+
+hr {
+	height: 12px;
+	width: 375px;
+    border: 0;
+    box-shadow: inset 0 24px 24px -12px rgba(255, 255, 255, 1);
+}
+
+.linedivide{ 
+	width: 375px;
+    display:block;
+    border:none;
+    color:white;
+    height:5px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#fff), to(#000));
+}
+
+
+
+/* FontAwesome shit */
+.icon {
+	color: white;
+	text-shadow: 1px 1px 12px #fff;
+	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+}
+
+.icon .fa-steam {	
+	color: white;
+	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+}
+
+.icon .fa-steam:hover {
+	color: #CAB16E;
+	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+}
+
+.icon .fa-twitter {
+	color: white;
+	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+}
+
+.icon .fa-twitter:hover {
+	color: #CAB16E;
+	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+}
+
+.icon .fa-tumblr {
+	color: white;
+	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+}
+
+.icon .fa-tumblr:hover {
+	color: #CAB16E;
+	transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+}
+
+/* More Shit Thanks Mystie */
+
+nav > ul,
+nav a {
+	color: #DBDBDB;
+	list-style:none;
+	margin:0;padding:0;
+	text-align:center
+}
+
+nav > ul > li {
+	display:inline-block;
+	margin:0;
+	padding:0;
+	cursor:default
+}
+
+nav > ul > li:after {
+	content:"|";
+	margin:0 8px;
+	opacity:.3
+}
+
+nav > ul > li:last-child:after {
+	content:"";
+	margin:0
+}
+h1 {
+    color: #455c6e;
+    display: block;
+    margin-top: 30px;
+	font-size: 24px
+}
+nav > ul,
+nav a {
+	color: #DBDBDB;
+    font-size: 15px;
+	list-style:none;
+	margin:0;padding:0;
+	text-align:center
+}
+
+nav > ul > li {
+	display:inline-block;
+	margin:0;
+	padding:0;
+	cursor:default
+}
+
+nav > ul > li:after {
+	content:"|";
+	margin:0 8px;
+	opacity:.3
+}
+
+nav > ul > li:last-child:after {
+	content:"";
+}
+
+i {
+	color: #111111;
+	font-size: 14px;
+    text-align: center;
+}
